@@ -8,7 +8,7 @@ int minElement(int arr[],int n)
       int mid=(l+h)/2;
       if(arr[mid-1]>arr[mid]||mid==0)
          return mid;
-      if(arr[mid+1]<arr[mid]||mid=n-1)
+      if(arr[mid+1]<arr[mid]||mid==n-1)
           return mid+1;
       if(arr[mid]>arr[h])
            l=mid+1;
