@@ -20,8 +20,8 @@ int main()
     cin>>n;
     int a[n];
     for(int i=0;i<n;i++)
-       cin>>a[i];                               // solve for removing duplicates [0,-1,2,-3,1,-1,3,0] , sum=-2
-    cout<<"Sum Value?\n";
+       cin>>a[i];                               // solve for removing duplicates [0,-1,2,-3,1,-1,3,0] , sum=-2 
+    cout<<"Sum Value?\n";                       // done check count_triplets_given_sum_sol1.cpp
     cin>>x;
     cout<<"Count of triplets found : "<<tripletCount(a,n,x);
     return 0;
