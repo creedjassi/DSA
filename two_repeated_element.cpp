@@ -11,7 +11,7 @@ void twoRepeats(int arr[],int n)
       }
 }
 int main()
-{   int a[]={1,2,2,1},n=2;
+{   int a[]={1,2,2,1},n=2;   // time = O(n) , aux space = O(1) 
     twoRepeats(a,n);
     return 0;
 }
