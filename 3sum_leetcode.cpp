@@ -15,9 +15,9 @@
                     {
                        if(i!=j && i!=h[-1*temp1] && j!=h[-1*temp1])
                          {   
-                             vector<int> a={nums[i],nums[j],nums[h[-1*temp1]]};  
+                             vector<int> a={nums[i],nums[j],nums[h[-1*temp1]]};  // sorting a passes tescase but exceeds time limit
                                  //ans.insert(a);
-                                 ans.push_back(a);
+                                 ans.push_back(a);   
                            }
                     }
                 else h.insert(make_pair(nums[j],j));
@@ -33,7 +33,7 @@ int main()
 {   vector<int>a={-1,0,1,2,-1,-4};
     vector<vector<int>> ans=threeSum(a);
     for(auto it=ans.begin();it!=ans.end();it++)            // think how to remove duplicates
-      {  vector<int> d=*it; 
+      {  vector<int> d=*it;                        
         for(auto it1=d.begin();it1!=d.end();it1++)
              cout<<*it1<<" ";
         cout<<endl;
