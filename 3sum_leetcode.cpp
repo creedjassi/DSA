@@ -32,8 +32,8 @@
 int main()
 {   vector<int>a={-1,0,1,2,-1,-4};
     vector<vector<int>> ans=threeSum(a);
-    for(auto it=ans.begin();it!=ans.end();it++)            // think how to remove duplicates
-      {  vector<int> d=*it;                        
+    for(auto it=ans.begin();it!=ans.end();it++)            // think how to remove duplicates  - done
+      {  vector<int> d=*it;                                   // refer 3sum_leetcode_sol1.cpp 
         for(auto it1=d.begin();it1!=d.end();it1++)
              cout<<*it1<<" ";
         cout<<endl;
