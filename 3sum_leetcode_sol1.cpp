@@ -11,7 +11,7 @@ vector<vector<int>> threesum(vector<int> & nums)
         if(i==0||nums[i]!=nums[i-1])
          {
             int l=i+1,h=n-1;
-            while(l<h)
+            while(l<h)  // n^2
             {
                 int sum=nums[i]+nums[l]+nums[h];
                 if(sum==0)
@@ -33,7 +33,7 @@ vector<vector<int>> threesum(vector<int> & nums)
 int main()
 {   
     vector<int>a={-1,0,1,2,-1,-4};
-    vector<vector<int>> ans=threesum(a);
+    vector<vector<int>> ans=threesum(a);   // gives unique triplets 
     for(auto it=ans.begin();it!=ans.end();it++)           
       {  vector<int> d=*it;                        
         for(auto it1=d.begin();it1!=d.end();it1++)
