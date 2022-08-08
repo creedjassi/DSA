@@ -6,14 +6,14 @@ int MaxWater(int arr[],int n)
     while(l<=h)
     {
       if(arr[l]<arr[h])
-        {ans=max(ans,(h-l-1)*arr[l]);
+        {ans=max(ans,(h-l-1)*arr[l]);  // -1 since we consider buildings width as one index 
          l+=1;
          }
       else if(arr[l]>arr[h])
-               {ans=max(ans,(h-l-1)*arr[h]); 
+               {ans=max(ans,(h-l-1)*arr[h]);  // -1 since we consider buildings width as one index 
                h-=1;
                }
-            else {ans=max(ans,(h-l-1)*arr[h]);
+            else {ans=max(ans,(h-l-1)*arr[h]);  // -1 since we consider buildings width as one index 
                   l+=1;
                   h-=1;
                   }     
