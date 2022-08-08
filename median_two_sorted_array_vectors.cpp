@@ -21,7 +21,7 @@ double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
             if(min1>=max2 && min2>=max1)
             {
                 if((n1+n2)%2==0)
-                    return (double)(max(max1,max2)+min(min1,min2))/2;
+                    return (double)(max(max1,max2)+min(min1,min2))/2; //remember first add and then typecast and then divide by 2 else lossy conversion
                 else return (double)max(max1,max2);
             }
             else if(min1<max2)
