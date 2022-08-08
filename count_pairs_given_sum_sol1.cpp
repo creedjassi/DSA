@@ -15,7 +15,7 @@ int countPairs(int arr[],int n,int x)
 }
 int main()
 {   int n,x;
-    cout<<"No. of elements in Array?\n";
+    cout<<"No. of elements in Array?\n";   // unique_pairs only
     cin>>n;
     int a[n]={0};
     for(int i=0;i<n;i++)
