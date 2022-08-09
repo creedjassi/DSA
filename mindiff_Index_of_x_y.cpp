@@ -4,7 +4,7 @@
 using namespace std;
 int minDist(int arr[], int n, int x, int y) {
         
-        int a1=-1,a2=-1,res=10000;
+        int a1=-1,a2=-1,res=INT_MAX;
         for(int i=0;i<=n;i++)
           {  //cout<<a1<<" "<<a2<<"\n"; 
              if(a1!=a2 && a1!=-1 && a2!=-1)
@@ -15,7 +15,7 @@ int minDist(int arr[], int n, int x, int y) {
                  a2=i+1;
                 
           }
-          if(res==10000)
+          if(res==INT_MAX)
             return -1;
           return res;
 }  
