@@ -5,9 +5,10 @@ int Search(int arr[],int n,int x)
     while(l<=h)
     {
         int mid=(l+h)/2;
+        //cout<<l<<" "<<h<<'\n';
         if(arr[mid]==x)
           return mid;
-        if(arr[mid]>arr[l])  
+        if(arr[mid]>=arr[l])  
         {   if(x>=arr[l] && x<arr[mid])
                h=mid-1;
             else l=mid+1;
@@ -20,7 +21,7 @@ int Search(int arr[],int n,int x)
     return -1;
 }
 int main()
-{   int arr[]={100,200,400,1000,10,20},n=6,x=40;
+{   int arr[]={5,1,2,3,4},n=5,x=1;
     cout<<Search(arr,n,x);
     return 0;
 }
