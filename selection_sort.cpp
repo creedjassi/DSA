@@ -15,7 +15,7 @@ void selection_sort(int arr[],int n)
     }
 }
 int main()
-{   int arr[]={3,5,4,10,2,1};
+{   int arr[]={3,5,4,10,2,1}; // sscending
     int n=6;
     selection_sort(arr,n);
     for(int i=0;i<n;i++)
