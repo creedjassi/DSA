@@ -29,6 +29,9 @@ void mergeSort(int arr[],int low,int high)
     mergeSort(arr,mid+1,high);
     merge(arr,low,mid,high);
     }
+    // for(int i=0;i<5;i++)
+    // cout<<arr[i]<<" ";
+    // cout<<endl;
 }
 
 int main()
